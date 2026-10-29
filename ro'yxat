@@ -1,0 +1,359 @@
+# Kitob klassi
+class Kitob:
+    def __init__(self, nomi, muallifi):
+        self.nomi = nomi
+        self.muallifi = muallifi
+
+class Oquvchi:
+    def __init__(self, ism, familiya, sinfi):
+        self.ism = ism
+        self.familiya = familiya
+        self.sinfi = sinfi
+        self.kitob = None 
+
+
+    def kitob_olish(self, kitob_obyekti):
+        self.kitob = kitob_obyekti
+
+
+    def info(self):
+        if self.kitob:
+            print(f"{self.ism} {self.familiya} - {self.sinfi} sinf - Olgan kitobi: {self.kitob.nomi}")
+        else:
+            print(f"{self.ism} {self.familiya} - {self.sinfi} sinf - Kitob olmagan")
+
+
+# 1. Kitob obyektlarini yaratish
+kitob1 = Kitob("Sehrli qalam", "Nomalum muallif")
+kitob2 = Kitob("Zamonamiz qahramonlari", "Nomalum muallif")
+kitob3 = Kitob("Bahor nafasida", "Nomalum muallif")
+
+# 2. O'quvchi obyektlarini yaratish
+oquvchi1 = Oquvchi("Ali", "Karimov", "7A")
+oquvchi2 = Oquvchi("Malika", "Saidova", "8B")
+oquvchi3 = Oquvchi("Javohir", "Abdullayev", "9A")
+
+# 3. O'quvchilarga kitoblarni biriktirish
+oquvchi1.kitob_olish(kitob1)
+oquvchi2.kitob_olish(kitob2)
+oquvchi3.kitob_olish(kitob3)
+
+# 4. Natijani ekranga chop etish
+oquvchi1.info()
+oquvchi2.info()
+oquvchi3.info()
+# Kitob klassi
+class Kitob:
+    def __init__(self, nomi, muallifi):
+        self.nomi = nomi
+        self.muallifi = muallifi
+
+# Oquvchi klassi
+class Oquvchi:
+    def __init__(self, ism, familiya, sinfi):
+        self.ism = ism
+        self.familiya = familiya
+        self.sinfi = sinfi
+        self.kitob = None  # Dastlab oquvchida kitob yoq
+
+    # Oquvchiga kitob biriktirish metodi
+    def kitob_olish(self, kitob_obyekti):
+        self.kitob = kitob_obyekti
+
+    # Malumotlarni rasmda korsatilganidek chiqarish metodi
+    def info(self):
+        if self.kitob:
+            print(f"{self.ism} {self.familiya} - {self.sinfi} sinf - Olgan kitobi: {self.kitob.nomi}")
+        else:
+            print(f"{self.ism} {self.familiya} - {self.sinfi} sinf - Kitob olmagan")
+
+
+# 1. Kitob obyektlarini yaratish
+kitob1 = Kitob("Sehrli qalam", "Nomalum muallif")
+kitob2 = Kitob("Zamonamiz qahramonlari", "Nomalum muallif")
+kitob3 = Kitob("Bahor nafasida", "Nomalum muallif")
+
+# 2. O'quvchi obyektlarini yaratish
+oquvchi1 = Oquvchi("Ali", "Karimov", "7A")
+oquvchi2 = Oquvchi("Malika", "Saidova", "8B")
+oquvchi3 = Oquvchi("Javohir", "Abdullayev", "9A")
+
+# 3. O'quvchilarga kitoblarni biriktirish
+oquvchi1.kitob_olish(kitob1)
+oquvchi2.kitob_olish(kitob2)
+oquvchi3.kitob_olish(kitob3)
+
+# 4. Natijani ekranga chop etish
+oquvchi1.info()
+oquvchi2.info()
+oquvchi3.info()
+# Kitob klassi
+class Kitob:
+    def __init__(self, nomi, muallifi):
+        self.nomi = nomi
+        self.muallifi = muallifi
+
+# Oquvchi klassi
+class Oquvchi:
+    def __init__(self, ism, familiya, sinfi):
+        self.ism = ism
+        self.familiya = familiya
+        self.sinfi = sinfi
+        self.kitob = None  # Dastlab oquvchida kitob yoq
+
+    # Oquvchiga kitob biriktirish metodi
+    def kitob_olish(self, kitob_obyekti):
+        self.kitob = kitob_obyekti
+
+    # Malumotlarni rasmda korsatilganidek chiqarish metodi
+    def info(self):
+        if self.kitob:
+            print(f"{self.ism} {self.familiya} - {self.sinfi} sinf - Olgan kitobi: {self.kitob.nomi}")
+        else:
+            print(f"{self.ism} {self.familiya} - {self.sinfi} sinf - Kitob olmagan")
+
+
+# 1. Kitob obyektlarini yaratish
+kitob1 = Kitob("Sehrli qalam", "Nomalum muallif")
+kitob2 = Kitob("Zamonamiz qahramonlari", "Nomalum muallif")
+kitob3 = Kitob("Bahor nafasida", "Nomalum muallif")
+
+# 2. O'quvchi obyektlarini yaratish
+oquvchi1 = Oquvchi("Ali", "Karimov", "7A")
+oquvchi2 = Oquvchi("Malika", "Saidova", "8B")
+oquvchi3 = Oquvchi("Javohir", "Abdullayev", "9A")
+
+# 3. O'quvchilarga kitoblarni biriktirish
+oquvchi1.kitob_olish(kitob1)
+oquvchi2.kitob_olish(kitob2)
+oquvchi3.kitob_olish(kitob3)
+
+# 4. Natijani ekranga chop etish
+oquvchi1.info()
+oquvchi2.info()
+oquvchi3.info()
+# Kitob klassi
+class Kitob:
+    def __init__(self, nomi, muallifi):
+        self.nomi = nomi
+        self.muallifi = muallifi
+
+# Oquvchi klassi
+class Oquvchi:
+    def __init__(self, ism, familiya, sinfi):
+        self.ism = ism
+        self.familiya = familiya
+        self.sinfi = sinfi
+        self.kitob = None  # Dastlab oquvchida kitob yoq
+
+    # Oquvchiga kitob biriktirish metodi
+    def kitob_olish(self, kitob_obyekti):
+        self.kitob = kitob_obyekti
+
+    # Malumotlarni rasmda korsatilganidek chiqarish metodi
+    def info(self):
+        if self.kitob:
+            print(f"{self.ism} {self.familiya} - {self.sinfi} sinf - Olgan kitobi: {self.kitob.nomi}")
+        else:
+            print(f"{self.ism} {self.familiya} - {self.sinfi} sinf - Kitob olmagan")
+
+
+# 1. Kitob obyektlarini yaratish
+kitob1 = Kitob("Sehrli qalam", "Nomalum muallif")
+kitob2 = Kitob("Zamonamiz qahramonlari", "Nomalum muallif")
+kitob3 = Kitob("Bahor nafasida", "Nomalum muallif")
+
+# 2. O'quvchi obyektlarini yaratish
+oquvchi1 = Oquvchi("Ali", "Karimov", "7A")
+oquvchi2 = Oquvchi("Malika", "Saidova", "8B")
+oquvchi3 = Oquvchi("Javohir", "Abdullayev", "9A")
+
+# 3. O'quvchilarga kitoblarni biriktirish
+oquvchi1.kitob_olish(kitob1)
+oquvchi2.kitob_olish(kitob2)
+oquvchi3.kitob_olish(kitob3)
+
+# 4. Natijani ekranga chop etish
+oquvchi1.info()
+oquvchi2.info()
+oquvchi3.info()
+# Kitob klassi
+class Kitob:
+    def __init__(self, nomi, muallifi):
+        self.nomi = nomi
+        self.muallifi = muallifi
+
+# Oquvchi klassi
+class Oquvchi:
+    def __init__(self, ism, familiya, sinfi):
+        self.ism = ism
+        self.familiya = familiya
+        self.sinfi = sinfi
+        self.kitob = None  # Dastlab oquvchida kitob yoq
+
+    # Oquvchiga kitob biriktirish metodi
+    def kitob_olish(self, kitob_obyekti):
+        self.kitob = kitob_obyekti
+
+    # Malumotlarni rasmda korsatilganidek chiqarish metodi
+    def info(self):
+        if self.kitob:
+            print(f"{self.ism} {self.familiya} - {self.sinfi} sinf - Olgan kitobi: {self.kitob.nomi}")
+        else:
+            print(f"{self.ism} {self.familiya} - {self.sinfi} sinf - Kitob olmagan")
+
+
+# 1. Kitob obyektlarini yaratish
+kitob1 = Kitob("Sehrli qalam", "Nomalum muallif")
+kitob2 = Kitob("Zamonamiz qahramonlari", "Nomalum muallif")
+kitob3 = Kitob("Bahor nafasida", "Nomalum muallif")
+
+# 2. O'quvchi obyektlarini yaratish
+oquvchi1 = Oquvchi("Ali", "Karimov", "7A")
+oquvchi2 = Oquvchi("Malika", "Saidova", "8B")
+oquvchi3 = Oquvchi("Javohir", "Abdullayev", "9A")
+
+# 3. O'quvchilarga kitoblarni biriktirish
+oquvchi1.kitob_olish(kitob1)
+oquvchi2.kitob_olish(kitob2)
+oquvchi3.kitob_olish(kitob3)
+
+# 4. Natijani ekranga chop etish
+oquvchi1.info()
+oquvchi2.info()
+oquvchi3.info()
+# Kitob klassi
+class Kitob:
+    def __init__(self, nomi, muallifi):
+        self.nomi = nomi
+        self.muallifi = muallifi
+
+# Oquvchi klassi
+class Oquvchi:
+    def __init__(self, ism, familiya, sinfi):
+        self.ism = ism
+        self.familiya = familiya
+        self.sinfi = sinfi
+        self.kitob = None  # Dastlab oquvchida kitob yoq
+
+    # Oquvchiga kitob biriktirish metodi
+    def kitob_olish(self, kitob_obyekti):
+        self.kitob = kitob_obyekti
+
+    # Malumotlarni rasmda korsatilganidek chiqarish metodi
+    def info(self):
+        if self.kitob:
+            print(f"{self.ism} {self.familiya} - {self.sinfi} sinf - Olgan kitobi: {self.kitob.nomi}")
+        else:
+            print(f"{self.ism} {self.familiya} - {self.sinfi} sinf - Kitob olmagan")
+
+
+# 1. Kitob obyektlarini yaratish
+kitob1 = Kitob("Sehrli qalam", "Nomalum muallif")
+kitob2 = Kitob("Zamonamiz qahramonlari", "Nomalum muallif")
+kitob3 = Kitob("Bahor nafasida", "Nomalum muallif")
+
+# 2. O'quvchi obyektlarini yaratish
+oquvchi1 = Oquvchi("Ali", "Karimov", "7A")
+oquvchi2 = Oquvchi("Malika", "Saidova", "8B")
+oquvchi3 = Oquvchi("Javohir", "Abdullayev", "9A")
+
+# 3. O'quvchilarga kitoblarni biriktirish
+oquvchi1.kitob_olish(kitob1)
+oquvchi2.kitob_olish(kitob2)
+oquvchi3.kitob_olish(kitob3)
+
+# 4. Natijani ekranga chop etish
+oquvchi1.info()
+oquvchi2.info()
+oquvchi3.info()
+# Kitob klassi
+class Kitob:
+    def __init__(self, nomi, muallifi):
+        self.nomi = nomi
+        self.muallifi = muallifi
+
+# Oquvchi klassi
+class Oquvchi:
+    def __init__(self, ism, familiya, sinfi):
+        self.ism = ism
+        self.familiya = familiya
+        self.sinfi = sinfi
+        self.kitob = None  # Dastlab oquvchida kitob yoq
+
+    # Oquvchiga kitob biriktirish metodi
+    def kitob_olish(self, kitob_obyekti):
+        self.kitob = kitob_obyekti
+
+    # Malumotlarni rasmda korsatilganidek chiqarish metodi
+    def info(self):
+        if self.kitob:
+            print(f"{self.ism} {self.familiya} - {self.sinfi} sinf - Olgan kitobi: {self.kitob.nomi}")
+        else:
+            print(f"{self.ism} {self.familiya} - {self.sinfi} sinf - Kitob olmagan")
+
+
+# 1. Kitob obyektlarini yaratish
+kitob1 = Kitob("Sehrli qalam", "Nomalum muallif")
+kitob2 = Kitob("Zamonamiz qahramonlari", "Nomalum muallif")
+kitob3 = Kitob("Bahor nafasida", "Nomalum muallif")
+
+# 2. O'quvchi obyektlarini yaratish
+oquvchi1 = Oquvchi("Ali", "Karimov", "7A")
+oquvchi2 = Oquvchi("Malika", "Saidova", "8B")
+oquvchi3 = Oquvchi("Javohir", "Abdullayev", "9A")
+
+# 3. O'quvchilarga kitoblarni biriktirish
+oquvchi1.kitob_olish(kitob1)
+oquvchi2.kitob_olish(kitob2)
+oquvchi3.kitob_olish(kitob3)
+
+# 4. Natijani ekranga chop etish
+oquvchi1.info()
+oquvchi2.info()
+oquvchi3.info()
+# Kitob klassi
+class Kitob:
+    def __init__(self, nomi, muallifi):
+        self.nomi = nomi
+        self.muallifi = muallifi
+
+# Oquvchi klassi
+class Oquvchi:
+    def __init__(self, ism, familiya, sinfi):
+        self.ism = ism
+        self.familiya = familiya
+        self.sinfi = sinfi
+        self.kitob = None  # Dastlab oquvchida kitob yoq
+
+    # Oquvchiga kitob biriktirish metodi
+    def kitob_olish(self, kitob_obyekti):
+        self.kitob = kitob_obyekti
+
+    # Malumotlarni rasmda korsatilganidek chiqarish metodi
+    def info(self):
+        if self.kitob:
+            print(f"{self.ism} {self.familiya} - {self.sinfi} sinf - Olgan kitobi: {self.kitob.nomi}")
+        else:
+            print(f"{self.ism} {self.familiya} - {self.sinfi} sinf - Kitob olmagan")
+
+
+# 1. Kitob obyektlarini yaratish
+kitob1 = Kitob("Sehrli qalam", "Nomalum muallif")
+kitob2 = Kitob("Zamonamiz qahramonlari", "Nomalum muallif")
+kitob3 = Kitob("Bahor nafasida", "Nomalum muallif")
+
+# 2. O'quvchi obyektlarini yaratish
+oquvchi1 = Oquvchi("Ali", "Karimov", "7A")
+oquvchi2 = Oquvchi("Malika", "Saidova", "8B")
+oquvchi3 = Oquvchi("Javohir", "Abdullayev", "9A")
+
+# 3. O'quvchilarga kitoblarni biriktirish
+oquvchi1.kitob_olish(kitob1)
+oquvchi2.kitob_olish(kitob2)
+oquvchi3.kitob_olish(kitob3)
+
+# 4. Natijani ekranga chop etish
+oquvchi1.info()
+oquvchi2.info()
+oquvchi3.info()
